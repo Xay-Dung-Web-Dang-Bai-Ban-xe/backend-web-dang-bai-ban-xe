@@ -1,0 +1,73 @@
+{% extends "base.html" %}
+{% block title %}Mua bán xe cũ{% endblock  %}
+{% block content %}
+<!-- Search Bar -->
+<div class="container mt-4">
+    <div class="row">
+        <div class="col-12">
+            <h4>Mua bán xe máy cũ trên toàn quốc</h4>
+            <p>Hiện có 5,000 xe máy đang được đăng bán</p>
+        </div>
+    </div>
+
+    <div class="row">
+        <div class="col-12">
+            <div class="input-group mb-3">
+                <input type="text" class="form-control" placeholder="Tìm kiếm xe máy cũ" aria-label="Tìm kiếm xe máy cũ" aria-describedby="button-addon2">
+                <div class="input-group-append">
+                    <button class="btn btn-danger" type="button" id="button-addon2">Tìm kiếm</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Filter Options -->
+    <div class="row">
+        <div class="col-12">
+            <div class="btn-group btn-group-toggle" data-toggle="buttons">
+                <label class="btn btn-outline-secondary">
+                    <input type="radio" name="options" id="option1" autocomplete="off"> Loại xe
+                </label>
+                <label class="btn btn-outline-secondary">
+                    <input type="radio" name="options" id="option2" autocomplete="off"> Mức giá
+                </label>
+                <label class="btn btn-outline-secondary">
+                    <input type="radio" name="options" id="option3" autocomplete="off"> Hãng xe
+                </label>
+                <label class="btn btn-outline-secondary">
+                    <input type="radio" name="options" id="option4" autocomplete="off"> Năm sản xuất
+                </label>
+                <label class="btn btn-outline-secondary">
+                    <input type="radio" name="options" id="option5" autocomplete="off"> Thành phố
+                </label>
+            </div>
+        </div>
+    </div>
+
+    <!-- Used Motorbike Listings -->
+    <div class="row mt-4">
+        <div class="col-12">
+            {% for x in 'qqqqqqqq' %}
+            <div class="card mb-3">
+                <div class="row no-gutters mt-15">
+                    <div class="col-md-4">
+                        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSjg02isrgR-crClcXh3iYUL0FBN0llK5Ux1w&s" class="card-img" alt="Motorbike image">
+                    </div>
+                    <div class="col-md-8">
+                        <div class="card-body">
+                            <h5 class="card-title">Bán Honda Air Blade 2020</h5>
+                            <p class="card-text">Giá: 35 triệu | Năm: 2020 | Hãng: Honda</p>
+                            <p class="card-text"><small class="text-muted">Quận 1, Hồ Chí Minh</small></p>
+                            <a href="/home/details" class="btn btn-primary">Xem chi tiết</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+                    {% endfor %}
+
+            <!-- Add more listings as needed -->
+        </div>
+    </div>
+</div>
+
+{% endblock  %}

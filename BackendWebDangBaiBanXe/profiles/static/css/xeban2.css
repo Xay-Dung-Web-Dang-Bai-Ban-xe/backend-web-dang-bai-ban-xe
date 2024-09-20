@@ -1,0 +1,70 @@
+/* Căn chỉnh khoảng cách cho bộ lọc */
+.filter-section h5 {
+    font-size: 1.1rem;
+    color: #333;
+    margin-bottom: 10px;
+    font-weight: bold;
+}
+
+.filter-section ul {
+    padding-left: 20px;
+}
+
+.filter-section li {
+    margin-bottom: 8px;
+}
+
+/* Căn chỉnh cho thẻ xe */
+.vehicle-card {
+    border: 1px solid #ddd;
+    border-radius: 8px;
+}
+
+.vehicle-card .card-body {
+    padding: 16px;
+}
+
+.vehicle-card .price {
+    font-size: 1.4rem;
+    font-weight: bold;
+    color: #e74c3c;
+}
+
+/* Tùy chỉnh cho các nút vùng và hãng xe */
+.btn-outline-secondary {
+    margin-right: 5px;
+    margin-bottom: 5px;
+}
+
+.btn-primary {
+    background-color: #007bff;
+    border: none;
+}
+
+.btn-primary:hover {
+    background-color: #0056b3;
+}
+
+/* Tùy chỉnh khoảng cách giữa các thẻ xe */
+.vehicle-card + .vehicle-card {
+    margin-top: 20px;
+}
+
+/* Tùy chỉnh cho checkbox */
+input[type="checkbox"] {
+    margin-right: 10px;
+    accent-color: #007bff;
+}
+
+/* Tùy chỉnh tổng thể */
+body {
+    background-color: #f8f9fa;
+}
+
+.container {
+    max-width: 1200px;
+}
+
+h5 {
+    font-weight: bold;
+}

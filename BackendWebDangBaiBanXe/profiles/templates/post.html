@@ -1,0 +1,96 @@
+{% extends "base.html" %}
+{% block content %}
+<div class="container my-5">
+    <h1 class="text-center mb-5">Used Car Sales Blog</h1>
+    <div class="row">
+        <div class="col-lg-8">
+            <div id="carListings" class="row g-4">
+                <div class="col-md-6">
+                    <div class="card h-100">
+                        <img src="https://images.unsplash.com/photo-1583121274602-3e2820c69888?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1470&q=80" class="card-img-top" alt="Car Image">
+                        <div class="card-body">
+                            <h5 class="card-title">2018 Toyota Camry</h5>
+                            <h6 class="card-subtitle mb-2 text-muted">John Doe</h6>
+                            <p class="card-text">Well-maintained Toyota Camry with low mileage. Perfect for daily commute.</p>
+                            <ul class="list-group list-group-flush mb-3">
+                                <li class="list-group-item"><strong>Make:</strong> Toyota</li>
+                                <li class="list-group-item"><strong>Model:</strong> Camry</li>
+                                <li class="list-group-item"><strong>Year:</strong> 2018</li>
+                                <li class="list-group-item"><strong>Mileage:</strong> 45,000</li>
+                            </ul>
+                            <p class="card-text"><small class="text-muted">Contact: john.doe@email.com</small></p>
+                            <div class="d-flex justify-content-between">
+                                <button class="btn btn-primary btn-sm">Edit</button>
+                                <button class="btn btn-danger btn-sm">Delete</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <div class="card h-100">
+                        <img src="https://images.unsplash.com/photo-1546614042-7df3c24c9e5d?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1470&q=80" class="card-img-top" alt="Car Image">
+                        <div class="card-body">
+                            <h5 class="card-title">2015 Honda Civic</h5>
+                            <h6 class="card-subtitle mb-2 text-muted">Jane Smith</h6>
+                            <p class="card-text">Reliable Honda Civic with great fuel efficiency. Perfect for city driving.</p>
+                            <ul class="list-group list-group-flush mb-3">
+                                <li class="list-group-item"><strong>Make:</strong> Honda</li>
+                                <li class="list-group-item"><strong>Model:</strong> Civic</li>
+                                <li class="list-group-item"><strong>Year:</strong> 2015</li>
+                                <li class="list-group-item"><strong>Mileage:</strong> 60,000</li>
+                            </ul>
+                            <p class="card-text"><small class="text-muted">Contact: jane.smith@email.com</small></p>
+                            <div class="d-flex justify-content-between">
+                                <button class="btn btn-primary btn-sm">Edit</button>
+                                <button class="btn btn-danger btn-sm">Delete</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="col-lg-4">
+            <div class="card">
+                <div class="card-body">
+                    <h5 class="card-title">Add New Listing</h5>
+                    <form id="newListingForm">
+                        <div class="mb-3">
+                            <label for="sellerName" class="form-label">Seller's Name</label>
+                            <input type="text" class="form-control" id="sellerName" required>
+                        </div>
+                        <div class="mb-3">
+                            <label for="listingTitle" class="form-label">Title</label>
+                            <input type="text" class="form-control" id="listingTitle" required>
+                        </div>
+                        <div class="mb-3">
+                            <label for="description" class="form-label">Description</label>
+                            <textarea class="form-control" id="description" rows="3" required></textarea>
+                        </div>
+                        <div class="mb-3">
+                            <label for="make" class="form-label">Make</label>
+                            <input type="text" class="form-control" id="make" required>
+                        </div>
+                        <div class="mb-3">
+                            <label for="model" class="form-label">Model</label>
+                            <input type="text" class="form-control" id="model" required>
+                        </div>
+                        <div class="mb-3">
+                            <label for="year" class="form-label">Year</label>
+                            <input type="number" class="form-control" id="year" required>
+                        </div>
+                        <div class="mb-3">
+                            <label for="mileage" class="form-label">Mileage</label>
+                            <input type="number" class="form-control" id="mileage" required>
+                        </div>
+                        <div class="mb-3">
+                            <label for="contactInfo" class="form-label">Contact Information</label>
+                            <input type="text" class="form-control" id="contactInfo" required>
+                        </div>
+                        <button type="submit" class="btn btn-primary">Submit Listing</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+{% endblock  %}
